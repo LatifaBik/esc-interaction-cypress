@@ -1,0 +1,52 @@
+@use '../lib/variables_mixins.scss' as *;
+
+.testimonials {
+
+  &__list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__listItem {
+    display: none;
+    margin: 0;
+    &:first-of-type {
+      display: block;
+    }
+
+    @include desktop {
+      display: block;
+    }}}
+  
+.testimonial {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 5rem 2fr;
+    grid-template-rows: auto auto;
+    max-width: 40rem;
+
+    &__quote {
+        font-size: 1.3rem;
+        font-style: italic;
+        margin: 0;
+        @include desktop {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__quote__date {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        font-size: 1rem;
+        @include desktop {
+            font-size: 1.3rem;
+        }
+    }
+  }

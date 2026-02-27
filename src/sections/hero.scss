@@ -1,0 +1,11 @@
+@use '../lib/variables_mixins.scss' as *;
+
+.hero {
+  &__image {
+    @include desktop {
+      max-height: 468px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

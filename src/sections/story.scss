@@ -1,0 +1,22 @@
+@use '../lib/variables_mixins.scss' as *;
+
+.story {
+  align-items: center;
+  background-color: $esc-bgblue;
+  color: $esc-textlight;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 8rem 3rem;
+
+  &__text {
+    font-size: 1.8rem;
+    margin: 0;
+    max-width: 40rem;
+    text-align: center;
+  }
+
+  &__button {
+    @include button(transparent, $esc-light-blue);
+    border: 2px solid $esc-light-blue;
+  }}

@@ -1,0 +1,28 @@
+@use '../lib/variables_mixins.scss' as *;
+
+.hero__buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0 3rem;
+
+    @include desktop {
+        flex-direction: row-reverse;
+  }
+
+  &__onsite {
+    @include button($esc-light-blue, black);
+
+  }
+  &__online {
+    color: $esc-bgblue;
+    font-weight: bold;
+
+    @include desktop {
+      @include button($esc-red, $esc-textlight);
+    }
+
+  }
+}

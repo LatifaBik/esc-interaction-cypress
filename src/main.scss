@@ -1,0 +1,33 @@
+@use 'sections/header.scss';
+@use 'sections/hero.scss';
+@use 'sections/herobuttons.scss';
+@use 'sections/testimonials.scss';
+@use 'sections/story.scss';
+@use 'sections/services.scss';
+@use 'sections/footer.scss';
+@use 'sections/challenges.scss';
+@use 'sections/filter.scss';
+@use 'lib/variables_mixins.scss' as *;
+@use 'sections/global.scss';
+@use 'sections/contact.scss';
+@use 'sections/aboutUs.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+html, body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+     overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}

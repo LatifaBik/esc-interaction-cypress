@@ -1,0 +1,46 @@
+@use '../lib/variables_mixins.scss' as *;
+
+.service {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+
+    &__image {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include desktop {
+      padding: 0 6rem;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    margin: 1.5rem 1rem;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    margin: 1rem 1rem;
+  }
+
+  &__link {
+    display: block;
+    @include button($esc-red, $esc-textlight);
+    margin: 2rem 1rem 4rem;
+  }
+}
