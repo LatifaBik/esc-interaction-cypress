@@ -2,3 +2,7 @@ node_modules/
 main.css
 *.map
 .hintrc 
+
+
+!main.css
+!main.css.map
