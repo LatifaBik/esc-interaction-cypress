@@ -8,7 +8,7 @@ describe("Filter (Challenges)", () => {
         // filter-sektionen som laddas in från filter.html
         cy.get(".filters").should("be.visible");
 
-        // Exempel: kolla att stäng-knapp finns
+        // kolla att stäng-knapp finns
         cy.get(".filters__close").should("be.visible");
 
         // specifikt webbelement i filtret (ex: checkbox för online)
